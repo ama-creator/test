@@ -1,5 +1,8 @@
 html{
     box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden
 }
 
 *,
@@ -10,7 +13,9 @@ html{
 
 body{
     font-size: 16px;
-    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden
 }
 
 a{
@@ -406,5 +411,17 @@ svg{
     }
     .footer-links__block{
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .sidebar-inner--active{
+        width: 92vmin;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .sidebar-inner--active{
+        width: 90vmin;
     }
 }
