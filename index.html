@@ -9,6 +9,36 @@
     <link rel="stylesheet" href="css/min.css">
 </head>
 <body>
+    <section class="p_prldr" id="p_prldr">
+        <svg>
+            <filter id="gooey">
+                <feGaussianBlur in="SourceGrathic" stdDeviation="10"/>
+
+                <feColorMatrix values="
+                        1 0 0 0 0
+                        0 1 0 0 0
+                        0 0 1 0 0
+                        0 0 0 20 -10">
+                </feColorMatrix>
+            </filter>
+        </svg>
+        <div class="preloader">
+            <span class="svg" style="--i:1;"></span>
+            <span class="svg" style="--i:2;"></span>
+            <span class="svg" style="--i:3;"></span>
+            <span class="svg" style="--i:4;"></span>
+            <span class="svg" style="--i:5;"></span>
+            <span class="svg" style="--i:6;"></span>
+            <span class="svg" style="--i:7;"></span>
+            <span class="svg" style="--i:8;"></span>
+            <span class="rotate svg" style="--j:0;"></span>
+            <span class="rotate svg" style="--j:1;"></span>
+            <span class="rotate svg" style="--j:2;"></span>
+            <span class="rotate svg" style="--j:3;"></span>
+            <span class="rotate svg" style="--j:4;"></span>
+            <span class="rotate svg" style="--j:5;"></span>
+        </div>
+    </section>
     <!-- header start  -->
     <header class="header">
         <div class="container">
@@ -74,7 +104,8 @@
         </div>
     </footer>
     <!-- footer end -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
 </body>
